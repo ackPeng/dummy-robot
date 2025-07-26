@@ -1,0 +1,10 @@
+# Ignore local build outputs
+build/
+**/build/
+
+# Ignore cache folders
+.cache/
+**/.cache/
+
+# Ignore local toolchain file (optional)
+arm-gcc-toolchain.cmake
