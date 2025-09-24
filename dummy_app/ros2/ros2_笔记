@@ -1,0 +1,5 @@
+1、clangd开发环境配置： https://www.cnblogs.com/a208606/p/19046821
+工作空间里有多个功能包只编译想要的：
+    coclon build --packages-select pkg_xxx1 pkg_xxx2 pkg_xxx3 ...
+
+    colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
