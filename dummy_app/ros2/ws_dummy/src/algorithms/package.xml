@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>algorithms</name>
+  <version>0.0.1</version>
+  <description>Six-DOF kinematics library (FK) with DOF6Kinematic and a test node.</description>
+
+  <maintainer email="1143590135@qq.com">pss</maintainer>
+  <license>MIT</license>
+
+  <!-- 构建系统 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 运行/编译依赖（保留你的原始依赖） -->
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+
+  <!-- Eigen 相关依赖（让 rosdep 提供 eigen3 的 CMake 配置与头文件） -->
+  <build_depend>eigen3_cmake_module</build_depend>
+  <build_export_depend>eigen3_cmake_module</build_export_depend>
+  <exec_depend>eigen</exec_depend>
+
+  <!-- 测试依赖（保留你的原始配置） -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
